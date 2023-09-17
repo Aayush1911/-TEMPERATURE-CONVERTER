@@ -1,0 +1,99 @@
+body{
+    background-color: #001a2f;
+}
+.container{
+    width: 35vw;
+    height: 65vh;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: #4f0bef;
+    border-radius: 10px;
+}
+.heading{
+    padding: 10px;
+    color:white;    
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif
+}
+.heading span{
+    margin-left: 15px;
+    color: red;
+    font-weight: bolder;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.list input{
+    width: 26vw;
+    height: 8vh;
+    background-color: #E4E4D0;
+    border-radius: 10px;
+    border: 0;
+   
+}
+.list span{
+    position: relative;
+    right: 38px;
+    font-weight: bolder;
+}
+.list ::placeholder{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 550;
+    color: rgb(87, 86, 86);
+}
+input[type=number]{
+    text-align: center;
+}
+button{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    width: 8vw;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4E4D0;
+    border-radius: 15px;
+    color: rgb(87, 86, 86);
+    font-size: 1rem;
+    font-weight: bolder;
+    border: 0;
+}
+.clear :hover{
+    background-color: red;
+    color: black;
+}
+@media only screen and (max-width:550px) {
+    .container{
+        width: 80%;
+        margin: auto;
+        margin: 25vh 9vw;
+        height: 50vh;
+        
+    }
+    .heading{
+        font-size: 0.8rem;
+    }
+    .list input{
+        width: 55vw;
+        margin: 0 10vw;
+        height: 5vh;
+    }
+    .list span{
+        position: relative;
+        left: 60vw;
+        top: -30px;
+    }
+    .clear button{
+        width: 40vw;
+        height:4vh
+    }
+}
